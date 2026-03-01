@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(value){
+            document.write(value);
+
+        }
+        function f2(num1, num2, mycallback){
+            let sum = num1 + num2;
+            mycallback(sum);
+        }
+        f2(5,9,f1)
+
+        function f3(){
+            return "HI how are you";
+        }
+        function f4(){
+            return "Im Fine & You";
+            callback();
+        }
+        document.write(f4(f3))
+    </script>
+</body>
+</html>
